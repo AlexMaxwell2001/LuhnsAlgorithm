@@ -6,10 +6,10 @@ public class LuhnsAlgo
         Scanner sc = new Scanner(System.in);
         String cardNumber = sc.nextLine();
         int sum = 0;
-        for(int j=input.length()-1;j>=0;j--)
+        for(int j=cardNumber.length()-1;j>=0;j--)
         {
             int number=Integer.parseInt(""+cardNumber.charAt(j));
-            if((input.length()-1-j)%2==1){
+            if((cardNumber.length()-1-j)%2==1){
                 number=number*2;
                 if(number>9){
                     number=number-9;
